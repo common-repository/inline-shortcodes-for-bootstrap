@@ -1,0 +1,66 @@
+<div id="tern-theme-shortcodes-button" class="tern-theme-shortcode-form form" data-type="button"><div>
+	<br class="clearfix" />
+	
+	<div class="alignright">
+		<a href="#" class="button button-primary button-add"><?php echo __('Add','tern-theme'); ?></a>
+		<a href="#" class="button button-primary button-update"><?php echo __('Update','tern-theme'); ?></a>
+		<a href="#" class="button back"><span class="back"><?php echo __('Back','tern-theme'); ?></span><span class="change"><?php echo __('Change','tern-theme'); ?></span></a>
+	</div>
+		
+	<h1><?php echo __('Button','tern-theme'); ?></h1>
+	<hr />
+	<table class="form-table">
+		<tr>
+			<th><label><?php echo __('Style of button','tern-theme'); ?></label></th>
+			<td>
+				<select name="type">
+					<option value="default"><?php echo __('Default','tern-theme'); ?></option>
+					<option value="primary"><?php echo __('Primary','tern-theme'); ?></option>
+					<option value="secondary"><?php echo __('Secondary','tern-theme'); ?></option>
+					<option value="success"><?php echo __('Success','tern-theme'); ?></option>
+					<option value="info"><?php echo __('Info','tern-theme'); ?></option>
+					<option value="warning"><?php echo __('warning','tern-theme'); ?></option>
+					<option value="danger"><?php echo __('Danger','tern-theme'); ?></option>
+					<option value="link"><?php echo __('Link','tern-theme'); ?></option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th><label><?php echo __('Button Text','tern-theme'); ?></label></th>
+			<td>
+				<input type="text" name="text" class="regular-text" placeholder="<?php echo __('Type your text here...','tern-theme'); ?>" />
+			</td>
+		</tr>
+		<tr>
+			<th><label><?php echo __('Button URL (On-site)','tern-theme'); ?></label></th>
+			<td>
+				<?php wp_dropdown_pages(array(
+					'name'				=>	'page',
+					'show_option_none'	=>	'select a page'
+				)); ?>
+			</td>
+		</tr>
+		<tr>
+			<th><label><?php echo __('Button URL (Off-site)','tern-theme'); ?></label></th>
+			<td>
+				<input type="text" name="url" class="regular-text" placeholder="<?php echo __('Paste your URL here...','tern-theme'); ?>" />
+			</td>
+		</tr>
+		<tr>
+			<th><label><?php echo __('Open in a new window','tern-theme'); ?></label></th>
+			<td>
+				<input type="checkbox" name="target" /> yes
+			</td>
+		</tr>
+	</table>
+	<hr />
+	<a href="#" class="btn btn-default" target=""><?php echo __('This is where your text will go.','tern-theme'); ?></a>
+	<hr />
+	<div class="alignright">
+		<a href="#" class="button button-primary button-add"><?php echo __('Add','tern-theme'); ?></a>
+		<a href="#" class="button button-primary button-update"><?php echo __('Update','tern-theme'); ?></a>
+		<a href="#" class="button back"><span class="back"><?php echo __('Back','tern-theme'); ?></span><span class="change"><?php echo __('Change','tern-theme'); ?></span></a>
+	</div>
+	<br class="clearfix" />
+			
+</div></div>

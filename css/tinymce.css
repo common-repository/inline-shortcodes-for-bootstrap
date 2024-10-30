@@ -1,0 +1,201 @@
+/**************************************************************************************************/
+/*
+/*		File:
+/*			tinymce.css
+/*		Description:
+/*			This file contains CSS for the administrative aspects.
+/*		Copyright:
+/*			Copyright (c) 2016 thnkng.co
+/*
+/**************************************************************************************************/
+
+body { margin:12px; }
+.clearfix { clear:both; }
+
+/*------------------------------------------------------------------------------------------------
+	Shortcode Blocks
+------------------------------------------------------------------------------------------------*/
+
+.tern-theme-shortcode { position:relative;width:100%;min-height:70px;background:#f3f3f3;margin:15px 0 5px;vertical-align:middle; }
+.tern-theme-shortcode .tern-theme-shortcode-title { display:block;position:relative;padding:20px;line-height:24px;font-size:14px;font-weight:700;color:#3e3d3d; min-height: 70px; }
+.tern-theme-shortcode .tern-theme-shortcode-title i { font-weight: normal; margin-right: 10px; }
+.tern-theme-shortcode .tern-theme-shortcode-title .desc { border-left: 1.5px solid #a8a8a8; color: #a8a8a8; font-family: 'Playfair Display', serif; font-style: italic; font-weight: normal; margin-left: 7px; padding-left: 7px; }
+
+.tern-theme-shortcode.row_column .tern-theme-shortcode-title.tern-theme-shortcode-control { min-height: 50px; padding: 10px 20px; }
+
+.tern-theme-shortcode.row_column .row { background: #fff; display: flex; margin: 0 20px 20px; /*padding: 20px 20px 10px;*/ text-align: center; transition: opacity 0.2s; -webkit-transition: opacity 0.2s; -moz-transition: opacity 0.2s; }
+.tern-theme-shortcode.row_column .row .tern-theme-shortcode { margin: 0; }
+.tern-theme-shortcode.row_column .row .tern-theme-shortcode-title { background: #fafafa; min-height: 50px; padding: 30px 0 0; }
+.tern-theme-shortcode.row_column .row .tern-theme-shortcode-title .desc { border: none; display: block; line-height: normal; margin: 0; padding: 20px; }
+.tern-theme-shortcode.row_column .row .tern-theme-shortcode .controls { background: #f3f3f3; float: none; padding: 20px; }
+
+.tern-theme-shortcode.row_column .row .add { color: #9e9e9e; display: block; height: 30px; line-height: 30px; margin: 10px auto 0; width: 30px; transition: all 0.2s; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; }
+.tern-theme-shortcode.row_column .row .add span { display: none; }
+.tern-theme-shortcode.row_column .row .add:hover { background: #606fa5; color: #fff; }
+
+.tern-theme-shortcode .tern-theme-shortcode-title .controls { float: right; }
+.tern-theme-shortcode .tern-theme-shortcode-title .controls .btn { background: #fafafa; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; border: none; color: #989898; height: 30px; line-height: 30px; margin: 0 0 0 1px; padding: 0; text-align: center; width: 30px; }
+.tern-theme-shortcode .tern-theme-shortcode-title .controls .btn:hover { background: #606fa5; color: #fff; }
+.tern-theme-shortcode .tern-theme-shortcode-title .controls .btn.disable { background: #63be7b; color: #fff; margin-left: 10px; }
+.tern-theme-shortcode.disabled > .tern-theme-shortcode-title .controls .btn.disable { background: #ad5a5a; }
+.tern-theme-shortcode.disabled .row { opacity: .5; }
+.tern-theme-shortcode .tern-theme-shortcode-title .controls .btn i { margin: 0; }
+
+.tern-theme-shortcode .tern-theme-shortcode-title .controls .btn span { background: #606fa5; bottom: 40px; color: #fff; font-family: 'Playfair Display', serif; font-style: italic; left: -35px; padding: 6px 5px; pointer-events: none; position: absolute; visibility: hidden; width: 100px; }
+.tern-theme-shortcode .tern-theme-shortcode-title .controls .btn span:after { border: solid transparent; border-color: rgba(96, 111, 165, 0); border-top-color: #606fa5; border-width: 5px; content: " "; height: 0; left: 50%; margin-left: -5px; pointer-events: none; position: absolute; top: 100%; width: 0; }
+.tern-theme-shortcode .tern-theme-shortcode-title .controls .btn:hover span { visibility: visible; }
+
+.tern-theme-shortcode.row_column .row .column { background: #fff; border-bottom: 1px solid #f3f3f3; border-right: 1px solid #f3f3f3; padding-top: 15px; padding-bottom: 15px; }
+.tern-theme-shortcode.row_column .row .column:last-of-type { border-right: 0; }
+.tern-theme-shortcode.row_column .row .column .column-header { color: #9e9e9e; font-family: 'Playfair Display', serif; font-style: italic; padding-bottom: 15px; }
+
+.tern-theme-shortcode .row .column.col-sm-4.col-md-4 { padding-left: 10px; padding-right: 10px; }
+.tern-theme-shortcode .row .column.col-sm-4.col-md-4:first-of-type { padding-left: 0; }
+.tern-theme-shortcode .row .column.col-sm-4.col-md-4:last-of-type { padding-right: 0; }
+
+.tern-theme-shortcode .btn { display:inline-block;position:relative;text-align:center;color:#999;text-decoration:none;cursor:pointer; transition: all 0.2s; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; }
+.tern-theme-shortcode .btn * { display:inline-block; }
+.tern-theme-shortcode .drag { color: #3e3d3d; cursor:move; display:inline-block; }
+.tern-theme-shortcode .drag:hover { text-decoration: none; }
+.tern-theme-shortcode .active-drag { box-shadow:inset 0 0 10px rgba(0,0,0,0.4);-moz-box-shadow:inset 0 0 10px rgba(0,0,0,0.4);-webkit-box-shadow:inset 0 0 10px rgba(0,0,0,0.4); }
+
+.tern-theme-shortcode .drag {  }
+.tern-theme-shortcode a.drag:hover ~ .drag-hover { background: rgba(255, 255, 255, 0.6); border: 6px solid #606fa5; /*height: calc(100% - 10px); height: -moz-calc(100% - 10px); height: -webkit-calc(100% - 10px);*/ height: 100%; left: 0; pointer-events: none; position: absolute; top: 0; width: 100%; transition: all 0.2s; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; }
+
+.tern-theme-shortcode .panel-group,
+.tern-theme-shortcode .alert,
+.tern-theme-shortcode .btn-shortcode,
+.tern-theme-shortcode .collapsor,
+.tern-theme-shortcode code,
+.tern-theme-shortcode .row-feature,
+.tern-theme-shortcode *[data-shortcode=image],
+.tern-theme-shortcode hr,
+.tern-theme-shortcode .slider,
+.tern-theme-shortcode .tabs,
+.tern-theme-shortcode .text,
+.tern-theme-shortcode .well { display:none !important; }
+
+.tern-theme-shortcode .place { background: #dfe2ed; cursor: pointer; display: block; height: 4px; overflow: hidden; text-align: left; width: 100%; transition: all 0.2s; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; }
+.tern-theme-shortcode .place i,
+.tern-theme-shortcode .place span { visibility: hidden; }
+.tern-theme-shortcode .place:hover { background: #606fa5; height: 30px; line-height: 30px; }
+.tern-theme-shortcode .place:hover i,
+.tern-theme-shortcode .place:hover span { visibility: visible; }
+
+.tern-theme-shortcode .place i { background: #516093; color: #fff; font-size: 10px; height: 30px; line-height: 30px; margin-right: 10px; text-align: center; width: 30px; }
+.tern-theme-shortcode .place i:before { position: relative; top: -2px; }
+.tern-theme-shortcode .place span { color: #fff; font-family: 'Playfair Display', serif; font-size: 13px; font-style: italic; }
+.tern-theme-shortcode a.place:hover,
+.tern-theme-shortcode a.place:focus { text-decoration: none; }
+
+.tern-theme-shortcode .below.place { border-bottom: 10px solid #fff; height: 14px; }
+.tern-theme-shortcode .below.place:hover { height: 40px; }
+
+.tern-theme-shortcode .tern-theme-shortcode .above, .tern-theme-shortcode .tern-theme-shortcode .below { display: none; }
+
+/*------------------------------------------------------------------------------------------------
+	Rows / Columns
+------------------------------------------------------------------------------------------------*/
+
+.tern-theme-shortcode .row { display:block;margin: 0; }
+.tern-theme-shortcode .row > div { display:inline-block; }
+
+.row > div { min-height:100px; }
+
+/*------------------------------------------------------------------------------------------------
+	Sort / Drag
+------------------------------------------------------------------------------------------------*/
+
+.tinymce-placeholder { width:100%;min-height:100px;background:#fdfdfd;border:1px dotted #efefef;box-shadow:inset 0 0 10px rgba(0,0,0,0.4);-moz-box-shadow:inset 0 0 10px rgba(0,0,0,0.4);-webkit-box-shadow:inset 0 0 10px rgba(0,0,0,0.4); }
+
+
+
+
+
+
+/* TERRIBLE VERSIONING TECHINIQUE HAPPENING HERE....
+
+/* Version BEFORE 10.27.15 */
+
+/*------------------------------------------------------------------------------------------------
+	Shortcode Blocks
+------------------------------------------------------------------------------------------------
+
+.tern-theme-shortcode { position:relative;width:100%;min-height:100px;background:#F9F9F9;border:1px solid #e1e1e1;margin:15px 0;text-align:center;vertical-align:middle; }
+.tern-theme-shortcode .tern-theme-shortcode-title { display:block;position:relative;background:#fff;border-bottom:1px solid #e1e1e1;padding:4px;line-height:24px;text-align:center;font-size:14px;font-weight:500;color:#32373c; }
+.tern-theme-shortcode .row .tern-theme-shortcode-title { display:block;position:relative;background:#fff;border-bottom:1px solid #e1e1e1;padding:4px;line-height:24px;text-align:center;font-size:14px;font-weight:400;color:#32373c; }
+
+.tern-theme-shortcode .row .column.col-sm-4.col-md-4 { padding-left: 7px; padding-right: 7px; }
+.tern-theme-shortcode .row .column.col-sm-4.col-md-4:first-of-type { padding-left: 15px; }
+.tern-theme-shortcode .row .column.col-sm-4.col-md-4:last-of-type { padding-right: 15px; }
+
+.tern-theme-shortcode .btn { display:inline-block;position:relative;margin:10px 2px;padding:4px 8px;text-align:center;color:#999;text-decoration:none;cursor:pointer; }
+.tern-theme-shortcode .btn * { display:inline-block; }
+.tern-theme-shortcode .btn span { overflow:hidden;line-height:0;font-size:0;text-indent:-9999px; }
+.tern-theme-shortcode .drag { display:block;position:absolute;top:0;right:0;margin:0 4px;font-size:18px;color:#999;text-decoration:none;cursor:move; }
+.tern-theme-shortcode .active-drag { box-shadow:inset 0 0 10px rgba(0,0,0,0.4);-moz-box-shadow:inset 0 0 10px rgba(0,0,0,0.4);-webkit-box-shadow:inset 0 0 10px rgba(0,0,0,0.4); }
+
+.tern-theme-shortcode .panel-group, .tern-theme-shortcode .alert, .tern-theme-shortcode .btn-shortcode, .tern-theme-shortcode .collapsor, .tern-theme-shortcode code, .tern-theme-shortcode .row-feature, .tern-theme-shortcode *[data-shortcode=image], .tern-theme-shortcode hr, .tern-theme-shortcode .slider, .tern-theme-shortcode .tabs, .tern-theme-shortcode .text, .tern-theme-shortcode .well { display:none !important; }
+
+.tern-theme-shortcode .below, .tern-theme-shortcode .above { display:inline-block;width:24px;border-bottom:0;margin:10px 2px 0;padding:0;border-bottom-left-radius:0;-moz-border-bottom-left-radius:0;-webkit-border-bottom-left-radius:0;-khtml-border-bottom-left-radius:0;border-bottom-right-radius:0;-moz-border-bottom-right-radius:0;-webkit-border-bottom-right-radius:0;-khtml-border-bottom-right-radius:0;font-size:12px; }
+.tern-theme-shortcode .tern-theme-shortcode .below { display:none; }
+
+/*------------------------------------------------------------------------------------------------
+	Rows / Columns
+------------------------------------------------------------------------------------------------
+
+.tern-theme-shortcode .row { display:block;margin: 0; }
+.tern-theme-shortcode .row > div { display:inline-block; }
+
+.row > div { min-height:100px;background:#f6f6f6; }
+
+/*------------------------------------------------------------------------------------------------
+	Sort / Drag
+------------------------------------------------------------------------------------------------
+
+.tinymce-placeholder { width:100%;min-height:100px;background:#fdfdfd;border:1px dotted #efefef;box-shadow:inset 0 0 10px rgba(0,0,0,0.4);-moz-box-shadow:inset 0 0 10px rgba(0,0,0,0.4);-webkit-box-shadow:inset 0 0 10px rgba(0,0,0,0.4); }
+
+
+
+
+
+
+
+
+
+
+
+
+/* ORIGINAL UNEDITED */
+
+/*------------------------------------------------------------------------------------------------
+	Shortcode Blocks
+------------------------------------------------------------------------------------------------
+
+.tern-theme-shortcode { position:relative;width:100%;min-height:100px;background:#f6f6f6;border:1px dashed #ccc;margin:10px 0;text-align:center;vertical-align:middle; }
+.tern-theme-shortcode .tern-theme-shortcode-title { display:block;position:relative;background:#efefef;margin:4px;line-height:24px;text-align:center;font-size:14px;color:#999; }
+.tern-theme-shortcode .btn { display:inline-block;position:relative;margin:10px 2px;padding:4px 8px;text-align:center;color:#999;text-decoration:none;cursor:pointer; }
+.tern-theme-shortcode .btn * { display:inline-block; }
+.tern-theme-shortcode .btn span { overflow:hidden;line-height:0;font-size:0;text-indent:-9999px; }
+.tern-theme-shortcode .drag { display:block;position:absolute;top:0;right:0;margin:0 4px;font-size:18px;color:#999;text-decoration:none;cursor:move; }
+.tern-theme-shortcode .active-drag { box-shadow:inset 0 0 10px rgba(0,0,0,0.4);-moz-box-shadow:inset 0 0 10px rgba(0,0,0,0.4);-webkit-box-shadow:inset 0 0 10px rgba(0,0,0,0.4); }
+
+.tern-theme-shortcode .panel-group, .tern-theme-shortcode .alert, .tern-theme-shortcode .btn-shortcode, .tern-theme-shortcode .collapsor, .tern-theme-shortcode code, .tern-theme-shortcode .row-feature, .tern-theme-shortcode *[data-shortcode=image], .tern-theme-shortcode hr, .tern-theme-shortcode .slider, .tern-theme-shortcode .tabs, .tern-theme-shortcode .well { display:none !important; }
+
+.tern-theme-shortcode .below, .tern-theme-shortcode .above { display:inline-block;width:24px;border-bottom:0;margin:10px 2px 0;padding:0;border-bottom-left-radius:0;-moz-border-bottom-left-radius:0;-webkit-border-bottom-left-radius:0;-khtml-border-bottom-left-radius:0;border-bottom-right-radius:0;-moz-border-bottom-right-radius:0;-webkit-border-bottom-right-radius:0;-khtml-border-bottom-right-radius:0;font-size:12px; }
+.tern-theme-shortcode .tern-theme-shortcode .below { display:none; }
+
+/*------------------------------------------------------------------------------------------------
+	Rows / Columns
+------------------------------------------------------------------------------------------------
+
+.tern-theme-shortcode .row { display:block;margin:10px; }
+.tern-theme-shortcode .row > div { display:inline-block; }
+
+.row > div { min-height:100px;background:#f6f6f6;border:1px dashed #ccc; }
+
+/*------------------------------------------------------------------------------------------------
+	Sort / Drag
+------------------------------------------------------------------------------------------------
+
+.tinymce-placeholder { width:100%;min-height:100px;background:#fdfdfd;border:1px dotted #efefef;box-shadow:inset 0 0 10px rgba(0,0,0,0.4);-moz-box-shadow:inset 0 0 10px rgba(0,0,0,0.4);-webkit-box-shadow:inset 0 0 10px rgba(0,0,0,0.4); }

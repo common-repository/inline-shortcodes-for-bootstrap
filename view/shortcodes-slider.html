@@ -1,0 +1,44 @@
+<div id="tern-theme-shortcodes-slider" class="tern-theme-shortcode-form form" data-type="slider"><div>
+	<br class="clearfix" />
+	
+	<?php if(!isset($sliders) or empty($sliders)) { ?>
+	<div class="alignright">
+		<a href="#" class="button back"><span class="back"><?php echo __('Back','tern-theme'); ?></span><span class="change"><?php echo __('Change','tern-theme'); ?></span></a>
+	</div>
+	<h1><?php echo __('You have not yet created any slides.','tern-theme'); ?></h1>
+	<?php } else { ?>
+	
+	<div class="alignright">
+		<a href="#" class="button button-primary button-add"><?php echo __('Add','tern-theme'); ?></a>
+		<a href="#" class="button button-primary button-update"><?php echo __('Update','tern-theme'); ?></a>
+		<a href="#" class="button back"><span class="back"><?php echo __('Back','tern-theme'); ?></span><span class="change"><?php echo __('Change','tern-theme'); ?></span></a>
+	</div>
+		
+	<h1><?php echo __('Slider Settings','tern-theme'); ?></h1>
+	<hr />
+	<table class="form-table">
+		<tr>
+			<th><label><?php echo __('Select Slider','tern-theme'); ?></label></th>
+			<td>
+				<?php echo $ternSel->create(array(
+					'data'		=>	$sliders,
+					'type'		=>	'multi',
+					'key'		=>	'post_title',
+					'value'		=>	'ID',
+					'name'		=>	'slider'
+				)); ?>
+			</td>
+		</tr>
+	</table>
+	
+	<hr />
+	<div class="alignright">
+		<a href="#" class="button button-primary button-add"><?php echo __('Add','tern-theme'); ?></a>
+		<a href="#" class="button button-primary button-update"><?php echo __('Update','tern-theme'); ?></a>
+		<a href="#" class="button back"><span class="back"><?php echo __('Back','tern-theme'); ?></span><span class="change"><?php echo __('Change','tern-theme'); ?></span></a>
+	</div>
+	
+	<?php } ?>
+	<br class="clearfix" />
+			
+</div></div>
